@@ -15,6 +15,10 @@ export default function Home() {
                 <button>
                     <Link to="/pizza">Pizza</Link>
                 </button>
+
+                <button>
+                    <Link to="/steps">Steps</Link>
+                </button>
             </div>
         </div>
     );
