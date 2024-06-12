@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import stylesApp from '../../assets/App.module.css';
 
 export default function Home() {
-    const buttonList = ['home', 'pizza', 'steps'];
+    const buttonList = ['home', 'pizza', 'steps', 'date'];
 
     return (
         <div className={stylesApp.Index}>

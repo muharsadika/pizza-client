@@ -1,0 +1,22 @@
+.styledDiv {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.countContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
