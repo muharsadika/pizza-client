@@ -2,23 +2,31 @@ import { Link } from 'react-router-dom';
 import stylesApp from '../../assets/App.module.css';
 
 export default function Home() {
+    const buttonList = ['home', 'pizza', 'steps'];
+
     return (
         <div className={stylesApp.Index}>
             <div
-                // className={stylesApp.App}
-                style={{ display: 'flex', gap: '20px' }}
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '10px',
+                    margin: 'auto',
+                }}
             >
-                <button>
-                    <Link to="/">Home</Link>
-                </button>
-
-                <button>
-                    <Link to="/pizza">Pizza</Link>
-                </button>
-
-                <button>
-                    <Link to="/steps">Steps</Link>
-                </button>
+                {buttonList.map((button) => (
+                    <button
+                        className={stylesApp.button}
+                        key={button.toLowerCase()}
+                    >
+                        <Link
+                            to={`/${button.toLowerCase()}`}
+                            className={stylesApp.buttonText}
+                        >
+                            {button.charAt(0).toUpperCase() + button.slice(1)}
+                        </Link>
+                    </button>
+                ))}
             </div>
         </div>
     );
